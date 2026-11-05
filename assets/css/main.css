@@ -3745,22 +3745,7 @@ section,
 }
 
 
-#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-app"])
-.portfolio-item.filter-app:not(.isotope-hidden) {
-  width: 100% !important;
-}
 
-
-#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-product"])
-.portfolio-item.filter-product:not(.isotope-hidden) {
-  width: 100% !important;
-}
-
-
-#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-branding"])
-.portfolio-item.filter-branding:not(.isotope-hidden) {
-  width: 100% !important;
-}
 
 #portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-app"])
 .portfolio-item.filter-app .product-card,
@@ -4106,4 +4091,201 @@ section,
 
 .btn-kirim-pesan:hover {
   background: #209dd8;
+}
+
+
+/* =========================================
+   JUSTIFY SELURUH TEKS WEBSITE SGI
+========================================= */
+
+/* Semua paragraf */
+p {
+    text-align: justify !important;
+    text-justify: inter-word;
+    word-spacing: normal;
+    line-height: 1.6;
+}
+
+/* Tentang Kami */
+.about p {
+    text-align: justify !important;
+}
+
+/* Sejarah Perusahaan */
+.history p {
+    text-align: justify !important;
+}
+
+/* Produk */
+.portfolio-info p {
+    text-align: justify !important;
+}
+
+/* Sosial Media */
+.team-member .member-info p {
+    text-align: justify !important;
+}
+
+/* Tugas dan Tanggung Jawab */
+.card ol li {
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.7;
+}
+
+/* Tabel */
+td {
+    text-align: justify !important;
+}
+
+/* Footer */
+.footer p {
+    text-align: justify !important;
+}
+
+/* =========================================
+   JUSTIFY TUGAS DAN TANGGUNG JAWAB
+========================================= */
+
+#tugas .tugas-card {
+    height: 100%;
+    text-align: left;
+}
+
+#tugas .tugas-card ol {
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+#tugas .tugas-card ol li {
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.7;
+    padding-left: 5px;
+    margin-bottom: 15px;
+    word-spacing: normal;
+}
+
+/* Warna nomor */
+#tugas .tugas-card ol li::marker {
+    color: #47b2e4;
+    font-weight: 700;
+}
+
+/* Judul kartu tetap rata kiri */
+#tugas .tugas-card h4 {
+    text-align: left;
+}
+
+/* =========================================
+   JUSTIFY BAGIAN SOSIAL MEDIA
+========================================= */
+
+/* Paragraf pengantar */
+#team .section-title p {
+    text-align: justify !important;
+    text-justify: inter-word;
+    line-height: 1.7;
+}
+
+/* Kartu sosial media */
+#team .social-card {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Konten sosial media */
+#team .social-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Deskripsi LinkedIn, Instagram, TikTok */
+#team .social-content p {
+    text-align: justify !important;
+    text-justify: inter-word;
+    word-spacing: normal;
+    line-height: 1.7;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Judul dan kategori tetap rata kiri */
+#team .social-content h4,
+#team .social-content span {
+    text-align: left;
+}
+
+/* Link tetap rata kiri */
+#team .social-content a {
+    text-align: left;
+}
+/* Navigasi menuju kartu produk */
+#hss,
+#carbide,
+#steel {
+  scroll-margin-top: 120px;
+}
+
+
+
+/* Posisi tujuan saat produk dipilih */
+#hss,
+#carbide,
+#steel {
+  scroll-margin-top: 110px;
+}
+
+#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-app"])
+.portfolio-item.filter-app:not(.isotope-hidden) {
+  width: 100% !important;
+}
+
+#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-product"])
+.portfolio-item.filter-product:not(.isotope-hidden) {
+  width: 100% !important;
+}
+
+#portfolio:has(.portfolio-filters li.filter-active[data-filter=".filter-branding"])
+.portfolio-item.filter-branding:not(.isotope-hidden) {
+  width: 100% !important;
+}
+
+
+#scroll-top,
+.scroll-top {
+  display: none !important;
+}
+
+/* Notifikasi Form Kontak */
+.contact-message {
+  display: none;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact-message.success {
+  display: block;
+  color: #198754;
+  background: #d1e7dd;
+  border: 1px solid #badbcc;
+}
+
+.contact-message.error {
+  display: block;
+  color: #dc3545;
+  background: #f8d7da;
+  border: 1px solid #f5c2c7;
+}
+
+.contact-message.loading {
+  display: block;
+  color: #084298;
+  background: #cfe2ff;
+  border: 1px solid #b6d4fe;
 }
